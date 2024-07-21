@@ -19,8 +19,15 @@ const NavLink = ({ href, label }: { href: string; label: string;}) => {
 const NavBar = async () => {
   const {getUser} = getKindeServerSession();
   const user = await getUser(); 
-  const isAdmin = process.env.ADMIN_EMAIL
+
+  const { getPermission } = getKindeServerSession();
+  const role = await getPermission("adminP");
+  const isAdmin = role?.isGranted;
   
+  console.log(isAdmin)
+ 
+  // const isAdmin = process.env.ADMIN_EMAIL
+
   return (
     <nav className="sticky z-[999] h-14 inset-0 top-0 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
