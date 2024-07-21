@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Tools
+tailwind css
+[shadcn-ui](https://shadcn-ui.com)
+[lucide.dev](https://lucide.dev) for icons
+[kinde.com](https://kinde.com) for authentication
+
 ## Getting Started
 
 First, run the development server:
