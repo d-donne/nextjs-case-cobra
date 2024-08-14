@@ -23,9 +23,7 @@ const NavBar = async () => {
   const { getPermission } = getKindeServerSession();
   const role = await getPermission("adminP");
   const isAdmin = role?.isGranted;
-  
-  console.log(isAdmin)
- 
+   
   // const isAdmin = process.env.ADMIN_EMAIL
 
   return (
