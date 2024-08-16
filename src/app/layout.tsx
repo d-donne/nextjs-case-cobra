@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 
 
@@ -17,10 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
+      <body>
         <NavBar />
-        {children}
-        <Footer />
+        <div className="flex flex-col min-h-[calc(100vh-3.5rem-1px)]">
+          <main className="flex-1 flex flex-col h-full">{children}</main>
+          <Footer />
+        </div>
+        <Toaster />
       </body>
     </html>
   );

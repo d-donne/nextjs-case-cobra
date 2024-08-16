@@ -1,28 +1,33 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Tools
-tailwind css
-[shadcn-ui](https://shadcn-ui.com)
+[tailwind css](htttps://tailwindcss.com) for css
+[shadcn-ui](https://shadcn-ui.com) for ui components ++
 [lucide.dev](https://lucide.dev) for icons
 [kinde.com](https://kinde.com) for authentication
+[react-drop-zone](https://react-dropzone.js.org/) for file upload by drop
+[uploadthing](https://uploadthing.com) for file upload
+[framer-motion](https://framer.com)
+[zod](https://zod.dev)
+[neon database](https://neon.tech)
+[prisma ORM](https://prisma.io) 
+[sharp](https://www.npmjs.com/package/sharp)
+[react-rnd](https://www.npmjs.com/package/react-rnd/v/7.0.0) dragging and resizing custom image
 
 ## Getting Started
 
-First, run the development server:
+First install packages: 
+```
+pnpm install
+```
 
+then run the development server:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
