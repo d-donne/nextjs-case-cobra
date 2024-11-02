@@ -1,0 +1,6 @@
+name: CI/CD Next SSR to cPanel
+
+on:
+  push:
+    branches:
+      - main
